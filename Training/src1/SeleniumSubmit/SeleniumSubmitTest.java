@@ -17,7 +17,7 @@ public class SeleniumSubmitTest
 		dr.setBrowserName("chrome");
 		dr.setPlatform(Platform.WIN10);
 		
-		WebDriver driver= new RemoteWebDriver(new URL("http://192.168.43.190:4444/wd/hub"), dr);
+		WebDriver driver= new RemoteWebDriver(new URL("http://192.168.0.103:4444/wd/hub"), dr);
 		driver.get("https://www.google.com");
 		
 		driver.findElement(By.id("lst-ib")).sendKeys("Selenium Software");

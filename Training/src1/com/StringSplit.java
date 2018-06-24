@@ -16,5 +16,7 @@ public class StringSplit{
 			count++;
 		}
 				System.out.println(count);
+				//return count;
+				//Class c= new Class();
 	}
 }

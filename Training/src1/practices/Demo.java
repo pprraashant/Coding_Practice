@@ -73,4 +73,9 @@ class Demo
         // invokes the method at runtime
         methodcall3.invoke(obj);
     }
+     static public void main(String args) throws Exception
+    {
+    	 int delete;
+    }
+    
 }
