@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="72" started-at="2018-06-27T18:07:56Z" finished-at="2018-06-27T18:07:56Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="30" started-at="2018-06-27T18:07:56Z" finished-at="2018-06-27T18:07:56Z">
+      <class name="com.java.test.TestTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.java.test.TestTest@6de728]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.java.test.TestTest2@1e7a66b]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.java.test.TestTest@6de728]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.String)[pri:0, instance:com.java.test.TestTest@6de728]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test case]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test case
+	at com.java.test.TestTest.beforeMethod(TestTest.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:552)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="main()[pri:0, instance:com.java.test.TestTest@6de728]" name="main" duration-ms="1" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.java.test.TestTest@6de728]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.java.test.TestTest@6de728]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.java.test.TestTest@6de728]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.java.test.TestTest2@1e7a66b]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.java.test.TestTest -->
+      <class name="com.java.test.TestTest2">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.java.test.TestTest2@1e7a66b]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.java.test.TestTest2@1e7a66b]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="main()[pri:0, instance:com.java.test.TestTest2@1e7a66b]" name="main" duration-ms="5" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.java.test.TestTest2@1e7a66b]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.java.test.TestTest2@1e7a66b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.java.test.TestTest2 -->
+    </test> <!-- Test -->
+    <test name="Test2" duration-ms="4" started-at="2018-06-27T18:07:56Z" finished-at="2018-06-27T18:07:56Z">
+      <class name="com.java.test.TestTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.java.test.TestTest@afb23c]" name="beforeSuite" is-config="true" duration-ms="10" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.java.test.TestTest2@1e7a66b]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.java.test.TestTest@afb23c]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.java.test.TestTest@afb23c]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.java.test.TestTest@afb23c]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="main()[pri:0, instance:com.java.test.TestTest@afb23c]" name="main" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.java.test.TestTest@afb23c]" name="afterMethod" is-config="true" duration-ms="1" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.java.test.TestTest@afb23c]" name="afterClass" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.java.test.TestTest@afb23c]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.java.test.TestTest2@1e7a66b]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.java.test.TestTest@afb23c]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-06-27T23:37:56Z" finished-at="2018-06-27T23:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.java.test.TestTest -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>

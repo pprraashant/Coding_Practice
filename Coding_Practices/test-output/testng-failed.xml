@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="browser" value="Chrome"/>
+  <test name="Test(failed)">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="com.java.test.TestTest2">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="afterSuite"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.java.test.TestTest2 -->
+      <class name="com.java.test.TestTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="main"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- com.java.test.TestTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

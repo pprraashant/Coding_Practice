@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+  <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="com.java.test.TestTest"/>
+      <class name="com.java.test.TestTest2"/>
+    </classes>
+     </test> <!-- Test -->
+     <test name="Test2">
+     <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.java.test.TestTest"/>
+    </classes>
+     </test> <!-- Test -->
+</suite> <!-- Suite -->
