@@ -27,6 +27,8 @@ public class XpansionTest {
 	
 	public static void main(String [] args) throws InterruptedException
 	{
+		String ne= "Prashant";
+		ne.length();
 		String path=System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver",path+"\\exe\\ChromeDriver.exe");
 		ChromeDriver driver=new ChromeDriver();
