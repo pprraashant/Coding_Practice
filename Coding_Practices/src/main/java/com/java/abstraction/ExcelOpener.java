@@ -6,6 +6,7 @@ import java.io.IOException;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.CellValue;
 import org.apache.poi.ss.usermodel.FormulaEvaluator;
 import org.apache.poi.ss.usermodel.Row;
@@ -127,6 +128,37 @@ public class ExcelOpener {
 	 * Takes an existing Cell and merges all the styles and forumla into the new
 	 * one
 	 */
+	static void cloneCell(XSSFWorkbook workbook,Cell cNew, Cell cOld) {
+		cNew.setCellComment(cOld.getCellComment());
+		CellStyle newStyle = workbook.createCellStyle();
+		newStyle.cloneStyleFrom(cOld.getCellStyle());
+		cNew.setCellStyle(newStyle);
+
+		switch (cOld.getCellType()) {
+		case Cell.CELL_TYPE_BOOLEAN: {
+			cNew.setCellValue(cOld.getBooleanCellValue());
+			break;
+		}
+		case Cell.CELL_TYPE_NUMERIC: {
+			cNew.setCellValue(cOld.getNumericCellValue());
+			break;
+		}
+		case Cell.CELL_TYPE_STRING: {
+			cNew.setCellValue(cOld.getStringCellValue());
+			break;
+		}
+		case Cell.CELL_TYPE_ERROR: {
+			cNew.setCellValue(cOld.getErrorCellValue());
+			break;
+		}
+		case Cell.CELL_TYPE_FORMULA: {
+			cNew.setCellFormula(cOld.getCellFormula());
+			break;
+		}
+		}
+	}
+
+	
 	static void cloneCell(Cell cNew, Cell cOld) {
 		cNew.setCellComment(cOld.getCellComment());
 		cNew.setCellStyle(cOld.getCellStyle());
@@ -155,6 +187,7 @@ public class ExcelOpener {
 		}
 	}
 
+	
 	public int getNrColumns(int sheetIndex) {
 		assert workbook != null;
 
@@ -183,7 +216,7 @@ public class ExcelOpener {
 
 	}
 
-	static void writeToFile(Workbook workbook, String fileName)
+	public static void writeToFile(Workbook workbook, String fileName)
 			throws IOException {
 		FileOutputStream fileOut = new FileOutputStream(fileName);
 		workbook.write(fileOut);
