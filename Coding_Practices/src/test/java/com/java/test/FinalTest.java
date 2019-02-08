@@ -2,6 +2,7 @@ package com.java.test;
 
 public class FinalTest {
 	
+	char  s;
 	final int finalme;
 	{
 	//	finalme=5;

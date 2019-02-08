@@ -1,0 +1,57 @@
+BDD
+
+Given ( pre condition)
+
+When
+test
+
+then
+
+expected
+
+doing the right thing  -BDD
+
+TDD - doing the thing right
+
+http://brijb:8083/Demo/DOXCOM.html
+
+Scenario outline - to execute same scenario for multiple data
+
+Tag - to catagories the scenario
+
+
+Feature: Description
+
+@Sanity @Regression
+
+Scenario: Recharge with Cash
+       Given I entered the DOXCOM URL in the browser
+       And DOXCOM application should be visible
+       And Search for a customer with customer ID "100"
+       And Customer Details are Displayed
+       When I recharge with Amount "30" using Cash
+       Then Recharge should be successful
+       And Balance Should be "1530"
+
+//*[@id='CustID']
+
+//*[@id='OpenButton']
+
+//*[@id='CustomerIDTextBox']
+
+//*[contains(text(),'Account was recharged with:']
+
+https://courses.ultimateqa.com/users/sign_in
+
+saf_testing@test.com
+testing123
+
+//div[@class='course-card__img-container']/[@class='course-card__img']
+
+//h4[contains(text(),'Complete Applitools Course')]
+
+//*[@id='my_account']
+
+//ul[@class='dropdown-menu']/li/a[contains(text(),'Sign Out')]
+
+//a[contains(text(),'All Courses')]

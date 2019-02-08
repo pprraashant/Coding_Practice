@@ -1,0 +1,86 @@
+diff --git a/testfile b/testfile
+index 9d8a4e7..cf1d8d3 100644
+--- a/testfile
++++ b/testfile
+@@ -1 +1,2 @@
+ this is test file
++added second line to check difference
+warning: LF will be replaced by CRLF in testfile.
+The file will have its original line endings in your working directory.
+
+
+diff --git a/testfile b/testfile
+index 9d8a4e7..cf1d8d3 100644
+--- a/testfile
++++ b/testfile
+@@ -1 +1,2 @@
+ this is test file
++added second line to check difference
+warning: LF will be replaced by CRLF in testfile.
+The file will have its original line endings in your working directory.
+
+git diff 
+
+when added second file it did show any difference
+
+diff --git a/testfile2 b/testfile2
+new file mode 100644
+index 0000000..7dbfd42
+--- /dev/null
++++ b/testfile2
+@@ -0,0 +1 @@
++This is second file to test git
+warning: LF will be replaced by CRLF in testfile2.
+The file will have its original line endings in your working directory.
+
+
+$ git push -u origin master
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 767 bytes | 0 bytes/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+To https://gitlab.com/prashant2serve4u/sdetpune.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+nothing to commit, working directory clean
+
+diff --git a/testfile3 b/testfile3
+index 8aa2fa1..86f0696 100644
+--- a/testfile3
++++ b/testfile3
+@@ -1 +1,2 @@
+ THis is third file create to test push on remote
++adding line from gitlab to compare content in local
+warning: LF will be replaced by CRLF in testfile3.
+The file will have its original line endings in your working directory.
+
+
+Updating 34144db..4757225
+Fast-forward
+ testfile3 | 2 ++
+ 1 file changed, 2 insertions(+)
+
+
+diff --git a/testfile2 b/testfile2
+index 7dbfd42..4ee5d04 100644
+--- a/testfile2
++++ b/testfile2
+@@ -1 +1,2 @@
+ This is second file to test git
++this changes from local to check if conflict
+warning: LF will be replaced by CRLF in testfile2.
+The file will have its original line endings in your working directory.
+
+To https://gitlab.com/prashant2serve4u/sdetpune.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://gitlab.com/prashant2serve4u/sdetpune.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
