@@ -1,5 +1,5 @@
 package com.java.outputtrace;
-
+//IOException and RuntimeException
 import java.io.File;
 import java.io.FileNotFoundException;
 
