@@ -29,7 +29,7 @@ public class Testnull
 		Testnull n= new Testnull();
 		Object a=null;
 		//n.test(null);
-		n.test(345345345);
+	
 		
 	}
 }

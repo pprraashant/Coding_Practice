@@ -6,6 +6,7 @@ import java.util.Set;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 /*
@@ -27,13 +28,11 @@ public class XpansionTest {
 	
 	public static void main(String [] args) throws InterruptedException
 	{
-		String ne= "Prashant";
-		ne.length();
 		String path=System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver",path+"\\exe\\ChromeDriver.exe");
 		ChromeDriver driver=new ChromeDriver();
 		
-		driver.navigate().to("https://facebook.com");
+		//driver.navigate().to("https://facebook.com");
 		System.out.println(driver.findElement(By.id("email")).isDisplayed());
 		System.out.println(driver.findElement(By.tagName("title")).getText());
 		System.out.println(driver.getTitle());
