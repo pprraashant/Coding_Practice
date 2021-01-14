@@ -11,7 +11,7 @@
 		<surefire.version>2.18.1</surefire.version>
 		<ant.version>1.8.4</ant.version>
 		<maven.compiler.version>3.7.0</maven.compiler.version>
-		<poi.version>3.11</poi.version>
+		<poi.version>4.1.2</poi.version>
 		<com4j.version>2.1</com4j.version>
 		<jsch.version>0.1.51</jsch.version>
 		<extent.version>2.41.2</extent.version>
